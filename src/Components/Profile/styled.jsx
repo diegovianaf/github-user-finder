@@ -1,0 +1,78 @@
+import styled from 'styled-components'
+
+export const Container = styled.section`
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: .5rem;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 55rem;
+  padding: 2.5rem 2rem;
+`
+
+export const UserAvatar = styled.img`
+  border-radius: 50%;
+  max-width: 178px;
+`
+
+export const UserInfo = styled.article`
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+`
+
+export const UserHeader = styled.div`
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1;
+    margin-bottom: .25rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+`
+
+export const UserNickName = styled.a`
+  color: #2563eb;
+  font-size: 1.125rem;
+
+  &:hover {
+    color: #0741be;
+  }
+`
+
+export const UserBio = styled.p`
+  color: #9ca3af;
+  line-height: 1.5;
+`
+
+export const UserNumbers = styled.div`
+  background-color: #f3f4f6;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.4;
+  padding: 1rem 0;
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  span {
+    font-size: 1.25rem;
+  }
+`
+
+export const UserExtraInfo = styled.div`
+  display: grid;
+  gap: .5rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+`
