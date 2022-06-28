@@ -1,5 +1,10 @@
 import React from 'react'
 import * as S from './styled'
+import locationIcon from '../../Assets/icons/location.svg'
+import twitterIcon from '../../Assets/icons/twitter.svg'
+import linkIcon from '../../Assets/icons/link.svg'
+import buildingIcon from '../../Assets/icons/building.svg'
+
 
 const Profile = () => {
   return (
@@ -9,7 +14,13 @@ const Profile = () => {
         <S.UserHeader>
           <div>
             <h1>Diego Viana</h1>
-            <S.UserNickName href="https://github.com/diegovianaf" target="_blank">@diegovianaf</S.UserNickName>
+            <S.UserNickName
+              href="https://github.com/diegovianaf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @diegovianaf
+            </S.UserNickName>
           </div>
           <p>Joined Oct 6, 2021</p>
         </S.UserHeader>
@@ -33,22 +44,28 @@ const Profile = () => {
           </div>
         </S.UserNumbers>
         <S.UserExtraInfo>
-          <div>
-            <img src="" alt="" />
+          <S.ExtraInfoItems>
+            <S.RegularIcon src={locationIcon} />
             <p>Rio de Janeiro, Brazil</p>
-          </div>
-          <div>
-            <img src="" alt="" />
+          </S.ExtraInfoItems>
+          <S.ExtraInfoItems>
+            <S.SmallIcon src={twitterIcon} />
             <p>Not available</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">https://www.linkedin.com/in/diegovianaf/</a>
-          </div>
-          <div>
-            <img src="" alt="" />
+          </S.ExtraInfoItems>
+          <S.ExtraInfoItems>
+            <S.SmallIcon src={linkIcon} />
+            <a 
+              href="https://www.linkedin.com/in/diegovianaf/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://www.linkedin.com/in/diegovianaf/
+            </a>
+          </S.ExtraInfoItems>
+          <S.ExtraInfoItems>
+            <S.RegularIcon src={buildingIcon} />
             <p>Not available</p>
-          </div>
+          </S.ExtraInfoItems>
         </S.UserExtraInfo>
       </S.UserInfo>
     </S.Container>

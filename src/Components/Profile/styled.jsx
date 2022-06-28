@@ -49,7 +49,7 @@ export const UserNickName = styled.a`
 `
 
 export const UserBio = styled.p`
-  color: #9ca3af;
+  color: #51596b;
   line-height: 1.5;
 `
 
@@ -73,6 +73,22 @@ export const UserNumbers = styled.div`
 export const UserExtraInfo = styled.div`
   display: grid;
   gap: .5rem 1rem;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: 2fr 1fr;
+  padding: .5rem 0;
+`
+
+export const ExtraInfoItems = styled.div`
+  align-items: center;
+  color: #51596b;
+  display: flex;
+`
+
+export const RegularIcon = styled.img`
+  margin-right: 8px;
+  max-width: 12px;
+`
+
+export const SmallIcon = styled.img`
+  margin-right: 4px;
+  max-width: 16px;
 `
