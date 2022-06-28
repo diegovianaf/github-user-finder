@@ -4,14 +4,14 @@ import Profile from './Components/Profile/Profile'
 
 const App = () => {
   return (
-    <main>
+    <>
       <GlobalStyle />
       <Layout>
       <Profile />
       <section>Repositories</section>
       <section>Starreds</section>
       </Layout>
-    </main>
+    </>
   )
 }
 
