@@ -7,8 +7,7 @@ export const Container = styled.section`
   display: flex;
   gap: 1.25rem;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 55rem;
+  margin: 1rem auto;
   padding: 2.5rem 2rem;
 `
 
@@ -81,6 +80,10 @@ export const ExtraInfoItems = styled.div`
   align-items: center;
   color: #51596b;
   display: flex;
+
+  a:hover {
+    color: #0741be;
+  }
 `
 
 export const RegularIcon = styled.img`
