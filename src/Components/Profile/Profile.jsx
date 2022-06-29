@@ -5,7 +5,6 @@ import twitterIcon from '../../Assets/icons/twitter.svg'
 import linkIcon from '../../Assets/icons/link.svg'
 import buildingIcon from '../../Assets/icons/building.svg'
 
-
 const Profile = () => {
   return (
     <S.Container>
