@@ -28,7 +28,7 @@ export const UserHeader = styled.div`
   gap: 1rem;
   justify-content: space-between;
 
-  h1 {
+  h2 {
     font-size: 1.75rem;
     line-height: 1;
     margin-bottom: .25rem;
@@ -37,14 +37,14 @@ export const UserHeader = styled.div`
   p {
     font-size: 1.125rem;
   }
-`
 
-export const UserNickName = styled.a`
-  color: #2563eb;
-  font-size: 1.125rem;
+  a {
+    color: #2563eb;
+    font-size: 1.125rem;
 
-  &:hover {
-    color: #0741be;
+    &:hover {
+      color: #0741be;
+    }
   }
 `
 

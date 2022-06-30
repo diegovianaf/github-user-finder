@@ -15,14 +15,14 @@ const Profile = () => {
       <S.UserInfo>
         <S.UserHeader>
           <div>
-            <h1>{githubState.user.name}</h1>
-            <S.UserNickName
+            <h2>{githubState.user.name}</h2>
+            <a
               href={githubState.user.html_url}
               target="_blank"
               rel="noreferrer"
             >
               {githubState.user.login}
-            </S.UserNickName>
+            </a>
           </div>
           <p>{githubState.user.created_at}</p>
         </S.UserHeader>
