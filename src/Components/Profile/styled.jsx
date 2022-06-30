@@ -73,7 +73,7 @@ export const UserNumbers = styled.div`
 
 export const UserExtraInfo = styled.div`
   display: grid;
-  gap: .5rem 1rem;
+  gap: .5rem 1.5rem;
   grid-template-columns: 2fr 1fr;
   padding: .5rem 0;
 `
