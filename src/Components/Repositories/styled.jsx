@@ -20,6 +20,10 @@ export const WrapperTab = styled(Tab)`
   padding: 0.5rem 1rem;
   user-select: none;
 
+  &:hover {
+    background-color: #dce1e9;
+  }
+
   &:focus {
     outline: none;
   }
