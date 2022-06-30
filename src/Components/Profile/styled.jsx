@@ -25,6 +25,7 @@ export const UserInfo = styled.article`
 export const UserHeader = styled.div`
   align-items: flex-start;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 
   h1 {
@@ -56,9 +57,10 @@ export const UserNumbers = styled.div`
   background-color: #f3f4f6;
   border-radius: .5rem;
   display: flex;
+  gap: 1rem;
   justify-content: space-around;
   line-height: 1.4;
-  padding: 1rem 0;
+  padding: 1rem;
 
   p {
     font-size: 1.125rem;
