@@ -11,62 +11,62 @@ const Profile = () => {
 
   return (
     <S.Container>
-      <S.UserAvatar src="https://avatars.githubusercontent.com/u/92064022?v=4" alt="User's Avatar" />
+      <S.UserAvatar src={githubState.user.avatar_url} alt="User's Avatar" />
       <S.UserInfo>
         <S.UserHeader>
           <div>
             <h1>{githubState.user.name}</h1>
             <S.UserNickName
-              href="https://github.com/diegovianaf"
+              href={githubState.user.html_url}
               target="_blank"
               rel="noreferrer"
             >
-              @diegovianaf
+              {githubState.user.login}
             </S.UserNickName>
           </div>
-          <p>Joined Oct 6, 2021</p>
+          <p>{githubState.user.created_at}</p>
         </S.UserHeader>
-        <S.UserBio>Graduated in Business Administration (BBA), with skills in Communication, and looking forward to starting my career as a Frontend Developer</S.UserBio>
+        <S.UserBio>{githubState.user.bio}</S.UserBio>
         <S.UserNumbers>
           <div>
             <p>Repos</p>
-            <span>29</span>
+            <span>{githubState.user.public_repos}</span>
           </div>
           <div>
             <p>Gists</p>
-            <span>0</span>
+            <span>{githubState.user.public_gists}</span>
           </div>
           <div>
             <p>Followers</p>
-            <span>3</span>
+            <span>{githubState.user.followers}</span>
           </div>
           <div>
             <p>Following</p>
-            <span>6</span>
+            <span>{githubState.user.following}</span>
           </div>
         </S.UserNumbers>
         <S.UserExtraInfo>
           <S.ExtraInfoItems>
             <S.RegularIcon src={locationIcon} />
-            <p>Rio de Janeiro, Brazil</p>
+            <p>{githubState.user.location}</p>
           </S.ExtraInfoItems>
           <S.ExtraInfoItems>
             <S.SmallIcon src={twitterIcon} />
-            <p>Not available</p>
+            <p>{githubState.user.twitter_username}</p>
           </S.ExtraInfoItems>
           <S.ExtraInfoItems>
             <S.SmallIcon src={linkIcon} />
             <a 
-              href="https://www.linkedin.com/in/diegovianaf/"
+              href={githubState.user.blog}
               target="_blank"
               rel="noreferrer"
             >
-              https://www.linkedin.com/in/diegovianaf/
+              {githubState.user.blog}
             </a>
           </S.ExtraInfoItems>
           <S.ExtraInfoItems>
             <S.RegularIcon src={buildingIcon} />
-            <p>Not available</p>
+            <p>{githubState.user.company}</p>
           </S.ExtraInfoItems>
         </S.UserExtraInfo>
       </S.UserInfo>
