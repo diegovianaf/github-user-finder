@@ -45,7 +45,7 @@ export const LabelContainer = styled.label`
     font-family: inherit;
     font-size: 1.125rem;
     font-weight: 700;
-    padding: .75rem 1.5rem;
+    padding: .625rem 1.25rem;
 
     &:focus {
       outline: none;
