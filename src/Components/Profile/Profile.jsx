@@ -4,15 +4,18 @@ import locationIcon from '../../Assets/icons/location.svg'
 import twitterIcon from '../../Assets/icons/twitter.svg'
 import linkIcon from '../../Assets/icons/link.svg'
 import buildingIcon from '../../Assets/icons/building.svg'
+import useGithub from '../../Hooks/useGithub'
 
 const Profile = () => {
+  const { githubState } = useGithub()
+
   return (
     <S.Container>
       <S.UserAvatar src="https://avatars.githubusercontent.com/u/92064022?v=4" alt="User's Avatar" />
       <S.UserInfo>
         <S.UserHeader>
           <div>
-            <h1>Diego Viana</h1>
+            <h1>{githubState.user.name}</h1>
             <S.UserNickName
               href="https://github.com/diegovianaf"
               target="_blank"
