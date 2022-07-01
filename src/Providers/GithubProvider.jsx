@@ -10,6 +10,7 @@ export const GithubContext = createContext({
 
 const GithubProvider = ({ children }) => {
   const [githubState, setGithubState] = useState({
+    hasUser: false,
     loading: false,
     user: {
       avatar_url: undefined,
@@ -32,27 +33,41 @@ const GithubProvider = ({ children }) => {
   })
 
   const getUser = (username) => {
-    api.get(`users/${username}`).then(({ data }) => {
-      setGithubState((prevState) => ({
-        ...prevState,
-        user: {
-          avatar_url: data.avatar_url,
-          name: data.name,
-          html_url: data.html_url,
-          login: data.login,
-          created_at: data.created_at,
-          bio: data.bio,
-          public_repos: data.public_repos,
-          public_gists: data.public_gists,
-          followers: data.followers,
-          following: data.following,
-          location: data.location,
-          twitter_username: data.twitter_username,
-          blog: data.blog,
-          company: data.company,
-        },
-      }))
+    setGithubState((prevState) => ({
+      ...prevState,
+      loading: !prevState.loading,
+    }))
+
+    api
+      .get(`users/${username}`)
+      .then(({ data }) => {
+        setGithubState((prevState) => ({
+          ...prevState,
+          hasUser: true,
+          user: {
+            avatar_url: data.avatar_url,
+            name: data.name,
+            html_url: data.html_url,
+            login: data.login,
+            created_at: data.created_at,
+            bio: data.bio,
+            public_repos: data.public_repos,
+            public_gists: data.public_gists,
+            followers: data.followers,
+            following: data.following,
+            location: data.location,
+            twitter_username: data.twitter_username,
+            blog: data.blog,
+            company: data.company,
+          },
+        }))
     })
+      .finally(() => {
+        setGithubState((prevState) => ({
+          ...prevState,
+          loading: !prevState.loading,
+        }))
+      })
   }
 
   const contextValue = {
