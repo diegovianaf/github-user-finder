@@ -12,6 +12,10 @@ const Header = () => {
     return getUser(usernameForSearch)
   }
 
+  const handleKeypress = (e) => {
+    if (e.key === 'Enter') submitGetUser()
+  }
+
   return (
     <header>
       <S.Title>GitHub User Finder</S.Title>
@@ -22,6 +26,7 @@ const Header = () => {
           id="searchInput"
           placeholder="Search GitHub username..."
           onChange={(event) => setUsernameForSearch(event.target.value)}
+          onKeyPress={handleKeypress}
         />
         <button type="submit" onClick={submitGetUser}>Search</button>
       </S.LabelContainer>
