@@ -1,5 +1,6 @@
 import GlobalStyle from './Assets/globalStyles'
 import Layout from './Components/Layout/Layout'
+import NoSearch from './Components/NoSearch/NoSearch'
 import Profile from './Components/Profile/Profile'
 import Repositories from './Components/Repositories/Repositories'
 import useGithub from './Hooks/useGithub'
@@ -22,7 +23,7 @@ const App = () => {
           )}
         </>
       ) : (
-        <></>
+        <NoSearch />
       )}
     </Layout>
   )
