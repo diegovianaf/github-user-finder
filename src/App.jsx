@@ -1,4 +1,5 @@
 import Layout from './Components/Layout/Layout'
+import Loading from './Components/Loading/Loading'
 import NoSearch from './Components/NoSearch/NoSearch'
 import Profile from './Components/Profile/Profile'
 import Repositories from './Components/Repositories/Repositories'
@@ -12,7 +13,7 @@ const App = () => {
       {githubState.hasUser ? (
         <>
           {githubState.loading ? (
-            <p>Loading...</p>
+            <Loading />
           ) : (
             <>
               <Profile />
