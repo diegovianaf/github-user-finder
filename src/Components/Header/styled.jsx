@@ -5,7 +5,7 @@ export const Title = styled.h1`
   font-size: 2rem;
   margin-bottom: 1.5rem;
 
-  @media (max-width: 460px) {
+  @media (max-width: 480px) {
     font-size: 1.5rem;
   }
 `
@@ -22,7 +22,7 @@ export const LabelContainer = styled.label`
   padding: .5rem 1rem;
   width: 100%;
 
-  @media (max-width: 460px) {
+  @media (max-width: 480px) {
     gap: .125rem;
     padding: .25rem;
   }
@@ -40,7 +40,7 @@ export const LabelContainer = styled.label`
       color: #afb8c1;
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 480px) {
       font-size: 1rem;
     }
   }
@@ -49,7 +49,7 @@ export const LabelContainer = styled.label`
     margin-left: 1rem;
     max-width: 20px;
 
-    @media (max-width: 460px) {
+    @media (max-width: 480px) {
       display: none;
     }
   }
@@ -73,7 +73,7 @@ export const LabelContainer = styled.label`
       background-color: #033d8b;
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 480px) {
       font-size: 1rem;
       padding: .5rem;
     }

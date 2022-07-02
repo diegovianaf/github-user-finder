@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin: 1rem auto;
   padding: 2.5rem 2rem;
 
-  @media (max-width: 460px) {
+  @media (max-width: 480px) {
     font-size: 1.125rem;
   }
 `
