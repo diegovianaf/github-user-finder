@@ -2,14 +2,13 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 import styled from 'styled-components'
 
 export const WrapperTabs = styled(Tabs)`
-  text-align: center;
+  margin: 1rem auto;
 `
 
 export const WrapperTabList = styled(TabList)`
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 1rem;
 `
 
 export const WrapperTab = styled(Tab)`
@@ -35,12 +34,16 @@ export const WrapperTab = styled(Tab)`
 `
 
 export const WrapperTabPanel = styled(TabPanel)`
-  background-color: #fff;
-  border-radius: .5rem;
   display: none;
-  padding: 1rem;
+  margin: 1rem auto;
 
   &.is-selected {
     display: block;
   }
+`
+
+export const WrapperList = styled.div`
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 `

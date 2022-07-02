@@ -29,7 +29,7 @@ const Repositories = () => {
             <S.WrapperTab>Stars</S.WrapperTab>
           </S.WrapperTabList>
           <S.WrapperTabPanel>
-            <S.WrapperTabList>
+            <S.WrapperList>
               {githubState.repositories.map((item) => (
                 <RepositoryItem
                   key={item.id}
@@ -39,10 +39,10 @@ const Repositories = () => {
                   fullName={item.full_name}
                 />
               ))}
-            </S.WrapperTabList>
+            </S.WrapperList>
           </S.WrapperTabPanel>
           <S.WrapperTabPanel>
-            <S.WrapperTabList>
+            <S.WrapperList>
               {githubState.stars.map((item) => (
                 <RepositoryItem
                   key={item.id}
@@ -52,7 +52,7 @@ const Repositories = () => {
                   fullName={item.full_name}
                 />
               ))}
-            </S.WrapperTabList>
+            </S.WrapperList>
           </S.WrapperTabPanel>
         </S.WrapperTabs>
       ) : (
