@@ -24,7 +24,17 @@ const Profile = () => {
               {githubState.user.login}
             </a>
           </div>
-          <p>{githubState.user.created_at}</p>
+          <p>
+            {`Joined
+              ${new Date(githubState.user.created_at)
+                .toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                })
+              }
+            `}
+          </p>
         </S.UserHeader>
         <S.UserBio>{githubState.user.bio}</S.UserBio>
         <S.UserNumbers>
