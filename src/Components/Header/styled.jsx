@@ -4,6 +4,10 @@ export const Title = styled.h1`
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 460px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const LabelContainer = styled.label`
@@ -18,6 +22,11 @@ export const LabelContainer = styled.label`
   padding: .5rem 1rem;
   width: 100%;
 
+  @media (max-width: 460px) {
+    gap: .125rem;
+    padding: .25rem;
+  }
+
   input {
     background-color: transparent;
     border: 1px solid transparent;
@@ -30,11 +39,19 @@ export const LabelContainer = styled.label`
     &::placeholder {
       color: #afb8c1;
     }
+
+    @media (max-width: 460px) {
+      font-size: 1rem;
+    }
   }
 
   img {
     margin-left: 1rem;
     max-width: 20px;
+
+    @media (max-width: 460px) {
+      display: none;
+    }
   }
 
   button {
@@ -54,6 +71,11 @@ export const LabelContainer = styled.label`
 
     &:hover {
       background-color: #033d8b;
+    }
+
+    @media (max-width: 460px) {
+      font-size: 1rem;
+      padding: .5rem;
     }
   }
 `
