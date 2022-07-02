@@ -7,7 +7,6 @@ export const Container = styled.section`
   box-shadow: #51596b33 2px 4px 8px;
   display: flex;
   gap: 1.25rem;
-  justify-content: space-between;
   margin: 1rem auto;
   padding: 2.5rem 2rem;
 `
@@ -21,6 +20,7 @@ export const UserInfo = styled.article`
   display: flex;
   flex-direction: column;
   gap: .75rem;
+  width: 100%;
 `
 
 export const UserHeader = styled.div`
@@ -75,8 +75,8 @@ export const UserNumbers = styled.div`
 
 export const UserExtraInfo = styled.div`
   display: grid;
-  gap: .5rem 1.5rem;
-  grid-template-columns: 2fr 1fr;
+  gap: .5rem 2rem;
+  grid-template-columns: 1fr 1fr;
   padding: .5rem 0;
 `
 
