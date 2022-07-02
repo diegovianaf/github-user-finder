@@ -4,6 +4,7 @@ export const Container = styled.section`
   align-items: flex-start;
   background-color: #fff;
   border-radius: .5rem;
+  box-shadow: #51596b33 2px 4px 8px;
   display: flex;
   gap: 1.25rem;
   justify-content: space-between;

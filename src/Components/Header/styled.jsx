@@ -10,6 +10,7 @@ export const LabelContainer = styled.label`
   align-items: center;
   background-color: #fff;
   border-radius: .5rem;
+  box-shadow: #51596b33 2px 4px 8px;
   cursor: text;
   display: flex;
   gap: 1rem;
@@ -20,9 +21,9 @@ export const LabelContainer = styled.label`
   input {
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: inherit;
     font-family: inherit;
     font-size: 1.125rem;
+    line-height: 1.5;
     outline: none;
     width: 100%;
 
