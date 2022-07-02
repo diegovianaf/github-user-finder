@@ -41,7 +41,7 @@ export const UserHeader = styled.div`
 
   a {
     color: #2563eb;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 
     &:hover {
       color: #0741be;
@@ -51,7 +51,7 @@ export const UserHeader = styled.div`
 
 export const UserBio = styled.p`
   color: #51596b;
-  line-height: 1.5;
+  line-height: 1.3;
 `
 
 export const UserNumbers = styled.div`
@@ -69,6 +69,7 @@ export const UserNumbers = styled.div`
 
   span {
     font-size: 1.25rem;
+    font-weight: 700;
   }
 `
 
