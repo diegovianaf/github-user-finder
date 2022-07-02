@@ -25,6 +25,7 @@ const Header = () => {
           type="text"
           id="searchInput"
           placeholder="Search GitHub username..."
+          autoComplete="off"
           onChange={(event) => setUsernameForSearch(event.target.value)}
           onKeyPress={handleKeypress}
         />
