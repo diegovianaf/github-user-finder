@@ -20,7 +20,7 @@ const Profile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            {githubState.user.login}
+            @{githubState.user.login}
           </a>
         </div>
         <p>
@@ -35,7 +35,7 @@ const Profile = () => {
           `}
         </p>
       </S.UserHeader>
-      <S.UserBio>{githubState.user.bio}</S.UserBio>
+      <S.UserBio>{githubState.user.bio ?? 'This profile has no bio'}</S.UserBio>
       <S.UserNumbers>
         <div>
           <p>Repos</p>
@@ -57,11 +57,11 @@ const Profile = () => {
       <S.UserInfo>
         <S.ExtraInfoItems>
           <S.RegularIcon src={locationIcon} />
-          <p>{githubState.user.location}</p>
+          <p>{githubState.user.location ?? 'Not Available'}</p>
         </S.ExtraInfoItems>
         <S.ExtraInfoItems>
           <S.SmallIcon src={twitterIcon} />
-          <p>{githubState.user.twitter_username}</p>
+          <p>{githubState.user.twitter_username ?? 'Not Available'}</p>
         </S.ExtraInfoItems>
         <S.ExtraInfoItems>
           <S.SmallIcon src={linkIcon} />
@@ -70,12 +70,12 @@ const Profile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            {githubState.user.blog}
+            {githubState.user.blog ? githubState.user.blog : 'Not Available'}
           </a>
         </S.ExtraInfoItems>
         <S.ExtraInfoItems>
           <S.RegularIcon src={buildingIcon} />
-          <p>{githubState.user.company}</p>
+          <p>{githubState.user.company ?? 'Not Available'}</p>
         </S.ExtraInfoItems>
       </S.UserInfo>
     </S.Container>
